@@ -1,0 +1,396 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 6, 2023, 10:19:26 PM
+    Author     : ADMIN
+*/
+
+header{
+    height: 50px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5)
+}
+
+
+
+header h1{
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+header a {
+    color: black;
+}
+
+header img {
+    margin-left: 45px;
+    height: 50px;
+    margin-right: 10px;
+    width: 150px;
+}
+
+
+.left{
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 15%;
+    height: calc(100% - 50px);
+    background-color: #333;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    border-right: 5px #ffffff solid;
+}
+
+.navbar__left__link i {
+  font-size: 1.2em; 
+  margin-right: 10px;
+  right: 0;
+}
+
+.avatar{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.info{
+    justify-content: center;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+.examsubject1 h2 {
+  margin-left: 35px;
+}
+
+.examsubject2 h2 {
+  margin-left:250px;
+}
+
+.view{
+    margin-left: 20px;
+}
+
+.hihi{
+    margin-left: 15px;
+}
+
+.introduction {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -60%);
+    text-align: center;
+    z-index: 1;
+}
+.introduction h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    margin-right: 0px;
+}
+.introduction h2 {
+    color: #cccccc;
+    font-size: 40px;
+    margin: 0;
+}
+
+.classerror{
+    font-size: 50px;
+    color: red;
+    padding-left: 20px;
+    padding-top: 80px;
+}
+
+table, th, td {
+    border:2px solid black;
+    font-size: 20px;
+    padding: 2px;
+}
+
+table {
+    position: absolute;
+    top: 15%;
+    margin:0 auto;
+    max-width: 1100px;
+    width: 100%;
+    border-collapse:collapse;
+}
+
+th{
+    background-color: #006666;
+    color: white;
+}
+
+td, th {
+    width: 25%;
+    border: 2px solid black;
+}
+
+tr:nth-child(odd) {
+    background-color: #ccffff;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+
+.middle {
+    position: absolute;
+    top: 57px;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+}
+
+
+.middle-one{
+    background-color: #cccccc;
+    position: absolute;
+    top: 40px;
+    left:0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+}
+
+.middle-one-student{
+    background-color: #ffffff;
+    position: absolute;
+    top: 40px;
+    left:0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+}
+
+.content-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.content-header h4{
+    padding-top: 3%;
+    padding-left: 2%;
+}
+
+.searchclass{
+    padding-right:2%;
+    padding-top: 3%;
+}
+
+.searchclass form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchclass input[type="text"] {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid black;
+    margin-right: 8px;
+    font-size: 16px;
+    width: 200px;
+}
+
+.searchclass input[type="submit"] {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+}
+
+select {
+    background-color: #f2f2f2;
+    border: none; /* loại bỏ viền */
+    padding: 10px; /* đặt khoảng cách giữa phần tử và các nội dung */
+    font-size: 16px; /* đặt cỡ chữ cho phần tử */
+    width: 200px; /* đặt chiều rộng cho phần tử */
+    cursor: pointer; /* thay đổi kiểu con trỏ khi rê chuột vào phần tử */
+}
+
+/* Thay đổi màu nền của các tùy chọn trong select khi được chọn */
+option:checked {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Định dạng nút submit */
+input[type="submit"] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px; /* đặt khoảng cách giữa phần tử và các nội dung trên nó */
+    cursor: pointer;
+}
+
+/* Định dạng các tùy chọn trong select */
+.item-option {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Định dạng tùy chọn được chọn trong select */
+.item-option[selected] {
+    background-color: #4CAF50;
+    color: white;
+}
+.studentInClass{
+    margin-right: 100px;
+}
+
+.middle-two {
+    background-color: white;
+    position: relative;
+    width: 92%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+
+
+.tablecontent{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.navbar__left {
+    color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar__left__link {
+    padding: 20px;
+}
+
+.navbar__left__link a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar__left__link:hover {
+    background-color: #666666;
+    transition: 0.5s;
+
+}
+
+.navbar__left__link a:hover{
+    color: white;
+    transition: 0.3s;
+
+}
+
+.first{
+    margin-top: 20px;
+}
+
+
+h3{
+    padding-top: 10px;
+}
+
+.div_a h3 {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    display: block;
+    /*  text-decoration: none;*/
+    text-align: center;
+}
+
+.div_a a {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    display: block;
+    /*  text-decoration: none;*/
+    text-align: center;
+}
+
+.div_a {
+    background-color: orange;
+    border-radius: 20px;
+    margin: 50px 20px;
+    height: 150px;
+}
+
+.div_a2 {
+    background-color: orange;
+    border-radius: 20px;
+    margin: 50px 20px;
+    height: 150px;
+    font-size: 25px;
+}
+
+/*.subject-result {
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+    display: flex;
+    flex: 1;
+}
+
+.subject-result h3 {
+    display: inline-block;
+    background-color: #ff9933;
+    width: 230px;
+    height: 100px;
+    border-radius: 5px;
+}*/
+
+.subject-result {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.subject-result:hover {
+  background-color: #f7f7f7;
+}
+
+.hoho {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+
